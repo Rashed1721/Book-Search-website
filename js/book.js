@@ -72,8 +72,9 @@ const displayBooks = (books) => {
           <img height="300px" src="${`https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}" class="card-img-top " alt="...">
            <div class="card-body">
                <h5 class="card-title">${book.title.slice(0, 10)}</h5>
-                <p class="card-text">${book.author_name}</p>
-                <p class="card-text">${book.first_publish_year}</p>
+                <p class="card-text"><h6 style="display:inline;">Author:</h6>${book.author_name}</p>
+                <p class="card-text"><h6 style="display:inline;">publisher:</h6>${book.publisher}</p>
+                <p class="card-text"><h6 style="display:inline;">First publish year:<h6>${book.first_publish_year}</p>
             </div>
          </div>
         `
