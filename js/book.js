@@ -30,7 +30,7 @@ const searchBooks = () => {
 
     }
     else {
-        const url = `http://openlibrary.org/search.json?q=${serachText}`
+        const url = `https://openlibrary.org/search.json?q=${serachText}`
         fetch(url)
             .then(res => res.json())
             .then(data => displayBooks(data.docs))
